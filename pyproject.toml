@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "zktools"
+version = "0.1.0"
+description = "OS independent bioinformatics & biology tools."
+authors = ["zaf4 <zafermolbi@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "1.5.3"
+numpy = "^1.26.4"
+polars = "^0.20.16"
+biopython = "^1.83"
+lets-plot = "^4.3.0"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.3"
+mypy = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
